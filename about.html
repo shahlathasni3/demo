@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL-HAZEEM KUWAIT CO. FOR GENERAL CONTRACTING FOR BUILDINGS</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- header section start -->
+    <section class="sub-header">
+     <header>
+        <a href="#" class="brand">AL-HAZEEM</a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>  
+        </div>
+     </header>
+     </section>
+     <!-- about section start -->
+     <div class="abt-container">
+        <div class="abt-title">
+            <h1>About Us</h1>
+        </div>
+        <div class="abtcontent">
+            <div class="article">
+                <h2><span style="color: #f2ab31;">Al-Hazeem </span> Kuwait Co. for General Contracting for Buildings</h2>
+                <p>Al-Hazeem Kuwait Co. for General Contracting for Buildings having its registered office in Oman Street, it
+                     is a Kuwait Municipality approved General Contracting Company. We have been executing medium scale projects 
+                      Since inception we have focused our efforts on delivering the highest level of service and quality workmanship
+                       through our team of dedicated Engineers and Site Operatives. It is our aim to maintain a manageable level of projects,
+                        the focus being on quality rather than quantity, having gained a reputation of delivering the highest quality fit outs,
+                         professionally executed, within program and budget constraints.
+                </p>
+            </div>
+            <div class="abtimg">
+                <img src="./images/about.jpg" alt="">
+            </div>
+        </div>
+    </div>
+     <!-- about section end-->
+    
+    <!-- circular progress bar section end -->
+   <!-- footer section start -->
+   <footer>
+        
+    <div class="ftcontainer">
+        <div class="sec aboutus">
+            <h2>About Us</h2>
+            <p>
+                Al-Hazeem Kuwait Co. for General Contracting for Buildings
+                having its registered office in Oman Street, Kuwait City is
+                a Kuwait Municipality approved General Contracting Company.
+            </p>
+            <ul class="sci">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp"></i></i></a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">faq</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">help</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="sec contact">
+            <h2>Contact Info</h2>
+            <ul class="info">
+                <li>
+                    <span><i class="fas fa-map-marker-alt"></i></span>
+                    <span>Awtad Tower,Ali Al-Saleem Street<br>
+                    Qibla Block 1, Kuwait</span>
+                </li>
+                <li>
+                    <span><i class="fas fa-phone-alt"></i></span>
+                    <p><a href="tel:123456789">987654321</a><br>
+                        <a href="tel:123456789">987654321</a></p>
+                </li>
+                <li>
+                    <span><i class="fas fa-envelope"></i></span>
+                    <p><a href="mailto:info@alhazeemkw.co">info@alhazeemkw.co</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="copyrighttext">
+    <p>Copyright @ 2022 shahlathasni. All Rights Reserved.</p>
+</div>
+<!-- footer section end -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- navba toggle script -->
+<!-- navbar effect n scroll fixed -->
+ <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle('sticky', window.scrollY > 0);
+    });
+    // navbar responsive
+    var menu = document.querySelector('.menu');
+    var menuBtn = document.querySelector('.menu-btn')
+    var closebtn = document.querySelector('.close-btn');
+
+    menuBtn.addEventListener("click", () => {
+        menu.classList.add('active');
+    });
+
+    closebtn.addEventListener("click", () => {
+        menu.classList.remove('active');
+    });
+    // script for video-slide
+    const btns = document.querySelectorAll(".nav-btn");
+
+    const slider = document.querySelectorAll(".vieo-slide");
+    const contents = document.querySelectorAll(".hmcontent");
+
+    var slidenav = function(manual){
+
+        btns.forEach((btn) => {
+            btn.classList.remove("active");
+        });
+
+        slider.forEach((slide) => {
+            slide.classList.remove("active");
+        });
+
+        contents.forEach((hmcontent) => {
+            hmcontent.classList.remove("active");
+        });
+
+
+        btns[manual].classList.add("active");
+        slider[manual].classList.add("active");
+        contents[manual].classList.add("active");
+    }
+
+    btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+            slidenav(i);
+        });
+    });
+ </script>
+
+ <!-- swiperslider project -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.js"></script>
+ <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+ </body>
+</html>
