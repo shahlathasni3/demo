@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL-HAZEEM KUWAIT CO. FOR GENERAL CONTRACTING FOR BUILDINGS</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.css">
+</head>
+<body>
+    <!-- header section start -->
+    <section class="sub-header">
+     <header>
+        <a href="#" class="brand">AL-HAZEEM</a>
+        <div class="menu">
+            <div class="btn">
+                <i class="fas fa-times close-btn"></i>
+            </div>
+            <a href="home.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="btn">
+            <i class="fas fa-bars menu-btn"></i>  
+        </div>
+     </header>
+     </section>
+<!-- service section start --> 
+<div class="servicessec">
+    <div class="servcontainer">
+        <div class="servheading">
+            <h1>Service We Offer</h1>
+        </div>
+    </div>
+    <div class="servcontent">
+        <div class="servhero">
+            <div class="serve-icon">
+                <i class="far fa-building"></i>
+            </div>    
+            <h2>Interior</h2>
+            <p>Our design is experiential and attempts to modulate space to create beautiful, 
+                peaceful or dramatic spaces. We interpret the same with a contemporary design 
+                approach creating a versatile body of work ranging from civil structure, architectural
+                finishes and interiors of corporate offices, residences, commercial buildings, data centers,
+                recording studios, corporate offices to retail and hospitality spaces. </div>
+
+        <div class="servhero" style="background-color:#222;">
+            <div class="serve-icon">
+                <i class="far fa-building"></i>
+            </div>    
+            <h2>Architecture</h2>
+            <p style="color: #fff;">to form objects, systems, <br> or organizations, and comes from 
+                Latin constructio and Old French constructiuction is a general term meaning the art and science</p>    
+        </div>
+
+        <div class="servhero">
+            <div class="serve-icon">
+                <i class="far fa-building"></i>
+            </div>    
+            <h2>Mechanical</h2>
+            <p>Fire Protection and HVAC are the life-line for any Building and it is important that these are designed with 
+                latest technological advancements.  We have specific expertise in Design and Built of Building Projects for \
+                the oil & gas and ministry sector. Engineers have been trained in the latest design tools and constructionstandard 
+                which gives them an edge when it comes to complex coordination & execution.  
+                <p></p>       
+            </div>
+    </div>
+</div>
+                  
+<!-- service section end -->     
+
+
+
+
+
+
+    <!-- footer section start -->
+    <footer>
+        
+        <div class="ftcontainer">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>
+                    Al-Hazeem Kuwait Co. for General Contracting for Buildings
+                    having its registered office in Oman Street, Kuwait City is
+                    a Kuwait Municipality approved General Contracting Company.
+                </p>
+                <ul class="sci">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-whatsapp"></i></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">faq</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">help</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="sec contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <span>Awtad Tower,Ali Al-Saleem Street<br>
+                        Qibla Block 1, Kuwait</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-alt"></i></span>
+                        <p><a href="tel:123456789">987654321</a><br>
+                            <a href="tel:123456789">987654321</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <p><a href="mailto:info@alhazeemkw.co">info@alhazeemkw.co</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="copyrighttext">
+        <p>Copyright @ 2022 shahlathasni. All Rights Reserved.</p>
+    </div>
+    <!-- footer section end -->
+
+
+
+
+
+
+
+
+
+
+
+    <!-- navba toggle script -->
+    <!-- navbar effect n scroll fixed -->
+     <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+        // navbar responsive
+        var menu = document.querySelector('.menu');
+        var menuBtn = document.querySelector('.menu-btn')
+        var closebtn = document.querySelector('.close-btn');
+
+        menuBtn.addEventListener("click", () => {
+            menu.classList.add('active');
+        });
+
+        closebtn.addEventListener("click", () => {
+            menu.classList.remove('active');
+        });
+        // script for video-slide
+        const btns = document.querySelectorAll(".nav-btn");
+
+        const slider = document.querySelectorAll(".vieo-slide");
+        const contents = document.querySelectorAll(".hmcontent");
+
+        var slidenav = function(manual){
+
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+
+            slider.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+
+            contents.forEach((hmcontent) => {
+                hmcontent.classList.remove("active");
+            });
+
+
+            btns[manual].classList.add("active");
+            slider[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                slidenav(i);
+            });
+        });
+     </script>
+
+     <!-- swiperslider project -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.2/swiper-bundle.min.js"></script>
+     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+     </body>
+</html>
